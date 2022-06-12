@@ -1,0 +1,23 @@
+@use "app";
+@use "formModule" as form;
+@use "sass:color";
+.inputBox-Form {
+    input[type="submit"] {
+        background: form.$bg-input-submit;
+        color: form.$text-input-color;
+        @include form.claymorphismInput();
+        @include form.defaultTextSettings();
+        font-weight: 600;
+        margin-top: 10px;
+        cursor: pointer;
+        &:hover {
+            background: lighten(form.$bg-input-submit, 10%);
+            outline: none;
+        }
+        &.disabled {
+            background: lighten(form.$bg-input-submit, 50%);
+            color: darken(form.$text-input-color, 50%);
+            cursor: auto;
+        }
+    }
+}

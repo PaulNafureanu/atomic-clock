@@ -1,0 +1,14 @@
+$bg-input-icon:#F1C40F;
+$bg-input-submit:#1f83f2;
+$text-input-color: #fff;
+@mixin defaultTextSettings($font-size:1rem, $letter-spacing:2px, $line-height:1rem) {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: $letter-spacing;
+    line-height: $line-height;
+    font-size: $font-size;
+}
+
+@mixin claymorphismInput($color:rgba(255, 255, 255, 0.25)) {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25), inset 1px 1px 3px $color, inset -1px -1px 3px rgba(0, 0, 0, 0.5);
+}

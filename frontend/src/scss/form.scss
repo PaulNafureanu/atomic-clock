@@ -1,0 +1,55 @@
+@import "app";
+.formContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    form {
+        width: 100%;
+    }
+    .form {
+        box-sizing: border-box;
+        z-index: 3;
+        position: relative;
+        width: 400px;
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), 3px 3px 10px rgba(0, 0, 0, 0.25), inset 3px 3px 5px rgba(0, 0, 0, 0.5), inset 3px 3px 10px rgba(255, 255, 255, 0.2), inset -3px -3px 7px rgba(0, 0, 0, 0.75);
+        border-radius: 30px;
+        padding: 50px;
+        h3 {
+            color: white;
+            font-size: 2rem;
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .linkContainer {
+            display: flex;
+            justify-content: space-between;
+        }
+        .link {
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+            text-decoration: none;
+            margin-top: 10px;
+            &:hover {
+                color: rgb(202, 200, 200);
+            }
+        }
+    }
+}
+
+.toast-bg {
+    background-color: var(--bg-color) !important;
+}

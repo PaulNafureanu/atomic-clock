@@ -1,0 +1,13 @@
+@use "formModule" as form;
+.checkbox-Form {
+    color: form.$text-input-color;
+    @include form.defaultTextSettings(0.75rem, 1px);
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin: 1rem 0;
+    cursor: pointer;
+    input {
+        margin-right: 0.25rem;
+    }
+}

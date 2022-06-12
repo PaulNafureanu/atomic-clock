@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap");
+.card {
+  z-index: 2;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+}
+.card .imgBx {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.5s ease-in-out;
+}
+.card .imgBx img {
+  max-width: 100%;
+  margin: 0 0 20px;
+  transition: 0.5s ease-in-out;
+}
+.card .imgBx h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  transition: 0.5s ease-in-out;
+}
+.card:hover .imgBx {
+  transform: translateY(-50px);
+}
+.card:hover .imgBx img {
+  transform: translate(-20px, -100px) rotate(60deg) scale(1.2);
+}
+.card:hover .imgBx h2 {
+  transform: translateY(30px);
+}
+.card:hover .content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50px);
+}
+.card .content {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.card .content .size,
+.card .content .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+}
+.card .content .size h3,
+.card .content .color h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+.card .content .size span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+  color: #111;
+  background-color: white;
+  border-radius: 4px;
+  margin: 0 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.card .content .size span:hover {
+  background-color: darkslateblue;
+}
+.card .content .color span {
+  width: 16px;
+  height: 16px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.card .content .color span:nth-child(2) {
+  background-color: darkslateblue;
+}
+.card .content .color span:nth-child(3) {
+  background-color: black;
+}
+.card .content .color span:nth-child(4) {
+  background-color: gold;
+}
+.card .content .link {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: white;
+  border-radius: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #111;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=productCard.css.map */

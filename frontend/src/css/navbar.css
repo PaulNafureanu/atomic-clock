@@ -1,0 +1,80 @@
+.rest {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.navigation {
+  z-index: 3;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 2rem;
+  height: 3rem;
+  margin: 2rem 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.navigation:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+.navigation span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.navigation:hover {
+  width: 15rem;
+}
+.navigation:hover span {
+  opacity: 0;
+}
+
+.sorting {
+  z-index: 3;
+  position: fixed;
+  left: 0;
+  top: 10rem;
+  width: 2rem;
+  height: 24rem;
+  margin: 2rem 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.sorting .title {
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  letter-spacing: 0.25rem;
+  color: white;
+  text-transform: uppercase;
+}
+.sorting:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.sorting:hover {
+  width: 15rem;
+}
+.sorting:hover .title {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,43 @@
+@use "app";
+@use "formModule" as form;
+.inputBox-Form {
+    position: relative;
+    font-family: inherit;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    span {
+        display: inline-block;
+        color: form.$text-input-color;
+        @include form.defaultTextSettings(0.75rem, 1px);
+        margin-bottom: 1rem;
+        border-left: 0.25rem solid form.$text-input-color;
+        padding-left: 0.25rem;
+    }
+    .box {
+        display: flex;
+        .icon {
+            position: relative;
+            min-width: 40px;
+            height: 40px;
+            background-color: form.$bg-input-icon;
+            color: form.$text-input-color;
+            @include app.centeredFlex;
+            border-radius: 50%;
+            margin-right: 0.75rem;
+            font-size: 1.15rem;
+            @include form.claymorphismInput();
+        }
+        input {
+            position: relative;
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            @include form.claymorphismInput(rgba(0, 0, 0, 0.35));
+        }
+        &:hover input:not([type="submit"]) {
+            outline: 2px solid form.$text-input-color;
+        }
+    }
+}
