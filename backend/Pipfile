@@ -10,6 +10,7 @@ drf-nested-routers = "*"
 django-debug-toolbar = "*"
 mysqlclient = "*"
 dj-database-url = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
