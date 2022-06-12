@@ -68,7 +68,7 @@ class Cube extends React.Component<CubeProps, CubeState> {
     const material = new THREE.MeshPhongMaterial({ color: 0x44aa88 });
 
     //Create the cube
-    // const cube = new THREE.Mesh(geometry, material);
+    const cube = new THREE.Mesh(geometry, material);
 
     //Create the light
     const color = 0xffffff;
@@ -78,11 +78,11 @@ class Cube extends React.Component<CubeProps, CubeState> {
     scene.add(light);
 
     //Add the cube to the scene. Then render the scene
-    // scene.add(cube);
+    scene.add(cube);
     renderer.render(scene, camera);
 
     //loadObject
-    this.loadObject(scene);
+    // this.loadObject(scene);
 
     //GoOn
     function resizeRendererToDisplaySize(renderer: any) {
@@ -107,8 +107,8 @@ class Cube extends React.Component<CubeProps, CubeState> {
         camera.updateProjectionMatrix();
       }
 
-      // cube.rotation.x = time;
-      // cube.rotation.y = time;
+      cube.rotation.x = time;
+      cube.rotation.y = time;
 
       renderer.render(scene, camera);
 
