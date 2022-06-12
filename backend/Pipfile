@@ -8,6 +8,7 @@ django = "*"
 djangorestframework = "*"
 drf-nested-routers = "*"
 django-debug-toolbar = "*"
+mysqlclient = "*"
 
 [dev-packages]
 
